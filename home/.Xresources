@@ -1,0 +1,9 @@
+*foreground: rgb:b2/b2/b2
+*background: rgb:08/08/08
+xterm*termName: xterm-256color
+XTerm*locale: true
+Xterm*saveLines: 4096
+xterm*VT100.geometry: 132x50
+xterm*borderwidth: 0
+xterm*font: -misc-fixed-medium-*-normal-*-15-*-*-*-*-*-*-*
+xterm*loginShell: true
