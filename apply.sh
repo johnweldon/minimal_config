@@ -7,7 +7,7 @@ for d in $(find home/ -type d ); do
 done
 
 # copy files
-for f in $(find home/ -type f ); do 
+for f in $(find home/ -type f ); do
 	src=${f}
 	dst="${HOME}/${f#home/}"
 	diff $src $dst
@@ -19,15 +19,10 @@ done
 
 
 # Secure secrets
-for d in .ssh .gnupg .aws .docker ; do
+for d in .ssh .gnupg ; do
 	dir="${HOME}/${d}"
 	[ -d ${dir} ] && chmod 700 ${dir} && echo "secured ${dir}"
 	for f in $(find ${dir} -type f); do
 		chmod 600 ${f} && echo "secured ${f}"
 	done
 done
-
-for f in ${HOME}/.dockercfg ${HOME}/.lpad_oauth ; do
-	chmod 600 ${f} && echo "secured ${f}"
-done
-
