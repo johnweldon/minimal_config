@@ -5,12 +5,12 @@
 	name = John Weldon
 	email = johnweldon4@gmail.com
 
-[url "git@github.com:"]
-	insteadOf = https://github.com/
-	insteadOf = git://github.com/
-	insteadOf = gh:
-
-[url "git@bitbucket.org:"]
-	insteadOf = https://bitbucket.org/
-	insteadOf = git://bitbucket.org/
-	insteadOf = bb:
+# [url "git@github.com:"]
+# 	insteadOf = https://github.com/
+# 	insteadOf = git://github.com/
+# 	insteadOf = gh:
+# 
+# [url "git@bitbucket.org:"]
+# 	insteadOf = https://bitbucket.org/
+# 	insteadOf = git://bitbucket.org/
+# 	insteadOf = bb:
