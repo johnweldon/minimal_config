@@ -2,8 +2,8 @@
 	autocrlf = input
 
 [user]
-	name = John Weldon
-	email = johnweldon4@gmail.com
+	name = Example User
+	email = user@example.com
 
 # [url "git@github.com:"]
 # 	insteadOf = https://github.com/

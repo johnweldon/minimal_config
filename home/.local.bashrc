@@ -1,8 +1,12 @@
 #!/bin/bash
 
-export GOPATH=${HOME}
-export CDPATH=.:${GOPATH//://src:}/src:$CDPATH
-export PATH=${GOROOT}/bin:${GOPATH//://bin:}/bin:$PATH
+export TZ='America/Los_Angeles'
 
-export GIT_CEILING_DIRECTORIES=${HOME}/src:${HOME}/build
+export GOROOT=/usr/local/go
+export PATH=${GOROOT}/bin:${PATH}
 
+export GOPATH=$(go env GOPATH)
+export CDPATH=.:${GOPATH//://src:}/src:${CDPATH}
+export PATH=${GOPATH//://bin:}/bin:${PATH}
+
+export GIT_CEILING_DIRECTORIES=${HOME}
